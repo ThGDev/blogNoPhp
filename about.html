@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZeBlog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="smoothScroll-ES5.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+      <!-- BOUTON SCROLL TO TOP -->
+    <div class="arrow-up"><a href="#top" scrollTo="top" class="scrollOnClick"><i class="fas fa-arrow-circle-up"></i></a></div>
+
+    <!-- BARRE DE MENU -->
+    <nav id="top" class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="https://via.placeholder.com/112x28?text=LOGO+ZeBlog" width="112" height="28">
+          </a>
+          
+          <!-- MENU BURGER -->
+          <a id="boutonMenu" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        
+        <!-- ELEMENTS DE MENU -->
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="index.html" class="navbar-item">Home</a>
+            <a href="about.html" class="navbar-item">A propos</a>
+          </div>
+
+        </div>
+      </nav>
+
+      <!-- CONTENU -->
+      <section class="articles">
+        <div class="container has-text-centered py-4">
+          <h2 class="title">Woah !</h2>
+          <p class="subtitle mb-6">I'm the guys that made this whole thing possible</p>
+          <p>And I am modest</p>
+          <div class="columns py-5">
+              <!-- MON PROFIL -->
+            <div class="column">
+              <div class="level">
+                <div class="level-item"><figure class="image is-128x128"><img class="is-rounded" src="https://schooloflanguages.sa.edu.au/wp-content/uploads/2017/11/placeholder-profile-sq.jpg" alt=""></figure></div>
+              </div>
+              <h5 class="title is-5">Thg DEV</h5>
+              <p class="subtitle is-6">CEO</p>
+              <p>Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d'ennuis te seront épargnés.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>ZeBlog</strong> by <a href="#">ThGDev</a>. Des articles de qualité !
+          </p>
+        </div>
+      </footer>
+<script src="app.js"></script>
+<script src="citations.js"></script>
+  </body>
+</html>

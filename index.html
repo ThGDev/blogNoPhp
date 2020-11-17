@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZeBlog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="smoothScroll-ES5.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+      <!-- BOUTON SCROLL TO TOP -->
+    <div class="arrow-up"><a href="#top" scrollTo="top" class="scrollOnClick"><i class="fas fa-arrow-circle-up"></i></a></div>
+
+    <!-- MODAL -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <article class="message">
+                <div class="message-body">
+                    <h3 class="title is-3">Salut !</h3>
+                    <h4 class="subtitle is-4">Je t'offre cette citation pour ton arrivée :</h4>
+                    <p id="citation" class="iconCitation"></p>
+                </div>
+              </article>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+      <!-- BARRE DE MENU -->
+    <nav id="top" class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="https://via.placeholder.com/112x28?text=LOGO+ZeBlog" width="112" height="28">
+          </a>
+          
+          <!-- MENU BURGER -->
+          <a id="boutonMenu" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        
+        <!-- ELEMENTS DE MENU -->
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="index.html" class="navbar-item">Home</a>
+            <a href="about.html" class="navbar-item">A propos</a>
+          </div>
+
+        </div>
+      </nav>
+
+      <!-- INTRO -->
+      <section class="hero is-smal is-primary is-bold">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              Bienvenue sur ZeBlog : mon super blog
+            </h1>
+            <h2 class="subtitle">
+              Ici tu trouveras plein de supers articles
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <!-- MES CARDS ARTICLE -->
+      <section class="section">
+          <div class="container">
+              <div class="columns is-multiline">
+                <!-- ARTICLE #1 -->
+                <div class="column is-one-quarter">
+                    <article class="card">
+                        <div class="card-image">
+                          <figure class="image is-2by1">
+                            <img src="https://picsum.photos/640/320?random=1" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p class="title is-4">Mon 1er article cool</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                            <div class="content is-small">
+                                <time datetime="2020-11-16">16 Nov 2020</time>
+                            </div>
+                            <span class="tag">Tag(s) :</span>
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                          </div>
+                          <div class="content is-small">
+                              <p>Un super article de : </p>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://icotar.com/avatar/thierry.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-6"><a href="#">Thierry</a></p>
+                              <p class="subtitle is-6">@thierry</p>
+                            </div>
+                          </div>
+                          <button class="button" onclick="window.location.href='article.html';">
+                            <span class="icon">
+                                <i class="far fa-newspaper"></i>
+                            </span>
+                            <span>Lire →</span>
+                          </button>
+                        </div>
+                    </article>
+                </div>
+                <!-- ARTICLE #2 -->
+                <div class="column is-one-quarter">
+                    <article class="card">
+                        <div class="card-image">
+                          <figure class="image is-2by1">
+                            <img src="https://picsum.photos/640/320?random=2" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p class="title is-4">Mon 2ème article cool</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                            <div class="content is-small">
+                                <time datetime="2020-11-11">11 Nov 2020</time>
+                            </div>
+                            <span class="tag">Tag(s) :</span>
+                            <a href="#">#html</a> <a href="#">#css</a>
+                          </div>
+                          <div class="content is-small">
+                              <p>Un super article de : </p>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://icotar.com/avatar/thg.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-6"><a href="#">ThG</a></p>
+                              <p class="subtitle is-6">@thg</p>
+                            </div>
+                          </div>
+                          <button class="button" onclick="window.location.href='article.html';">
+                            <span class="icon">
+                                <i class="far fa-newspaper"></i>
+                            </span>
+                            <span>Lire →</span>
+                          </button>
+                        </div>
+                      </article>
+                </div>
+                <!-- ARTICLE #3 -->
+                <div class="column is-one-quarter">
+                    <article class="card">
+                        <div class="card-image">
+                          <figure class="image is-2by1">
+                            <img src="https://picsum.photos/640/320?random=3" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p class="title is-4">Mon 3ème article cool</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                            <div class="content is-small">
+                                <time datetime="2020-10-12">12 Oct 2020</time>
+                            </div>
+                            <span class="tag">Tag(s) :</span>
+                            <a href="#">#js</a> <a href="#">#html</a> <a href="#">#css</a>
+                          </div>
+                          <div class="content is-small">
+                              <p>Un super article de : </p>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://icotar.com/avatar/thgdev.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-6"><a href="#">ThGDev</a></p>
+                              <p class="subtitle is-6">@thgdev</p>
+                            </div>
+                          </div>
+                          <button class="button" onclick="window.location.href='article.html';">
+                            <span class="icon">
+                                <i class="far fa-newspaper"></i>
+                            </span>
+                            <span>Lire →</span>
+                          </button>
+                        </div>
+                      </article>
+                </div>
+                <!-- ARTICLE #4 -->
+                <div class="column is-one-quarter">
+                    <article class="card">
+                        <div class="card-image">
+                          <figure class="image is-2by1">
+                            <img src="https://picsum.photos/640/320?random=4" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p class="title is-4">Mon 4ème article cool</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                            <div class="content is-small">
+                                <time datetime="2020-10-12">12 Oct 2020</time>
+                            </div>
+                            <span class="tag">Tag(s) :</span>
+                            <a href="#">#js</a> <a href="#">#html</a> <a href="#">#css</a>
+                          </div>
+                          <div class="content is-small">
+                              <p>Un super article de : </p>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://icotar.com/avatar/thgdev.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-6"><a href="#">ThGDev</a></p>
+                              <p class="subtitle is-6">@thgdev</p>
+                            </div>
+                          </div>
+                          <button class="button" onclick="window.location.href='article.html';">
+                            <span class="icon">
+                                <i class="far fa-newspaper"></i>
+                            </span>
+                            <span>Lire →</span>
+                          </button>
+                        </div>
+                      </article>
+                </div>
+                <!-- ARTICLE #5 -->
+                <div class="column is-one-quarter">
+                    <article class="card">
+                        <div class="card-image">
+                          <figure class="image is-2by1">
+                            <img src="https://picsum.photos/640/320?random=5" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p class="title is-4">Mon 5ème article cool</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                            <div class="content is-small">
+                                <time datetime="2020-11-16">16 Nov 2020</time>
+                            </div>
+                            <span class="tag">Tag(s) :</span>
+                            <a href="#">#css</a> <a href="#">#responsive</a>
+                          </div>
+                          <div class="content is-small">
+                              <p>Un super article de : </p>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://icotar.com/avatar/thgdev.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-6"><a href="#">ThGDev</a></p>
+                              <p class="subtitle is-6">@thgdev</p>
+                            </div>
+                          </div>
+                          <button class="button" onclick="window.location.href='article.html';">
+                            <span class="icon">
+                                <i class="far fa-newspaper"></i>
+                            </span>
+                            <span>Lire →</span>
+                          </button>
+                        </div>
+                      </article>
+                </div>
+                <!-- ARTICLE #6 -->
+                <div class="column is-one-quarter">
+                    <article class="card">
+                        <div class="card-image">
+                          <figure class="image is-2by1">
+                            <img src="https://picsum.photos/640/320?random=6" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p class="title is-4">Mon 6ème article cool</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                            <div class="content is-small">
+                                <time datetime="2020-11-11">11 Nov 2020</time>
+                            </div>
+                            <span class="tag">Tag(s) :</span>
+                            <a href="#">#html</a> <a href="#">#css</a>
+                          </div>
+                          <div class="content is-small">
+                              <p>Un super article de : </p>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://icotar.com/avatar/thgdev.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-6"><a href="#">ThGDev</a></p>
+                              <p class="subtitle is-6">@thgdev</p>
+                            </div>
+                          </div>
+                          <button class="button" onclick="window.location.href='article.html';">
+                            <span class="icon">
+                                <i class="far fa-newspaper"></i>
+                            </span>
+                            <span>Lire →</span>
+                          </button>
+                        </div>
+                      </article>
+                </div>
+                <!-- ARTICLE #7 -->
+                <div class="column is-one-quarter">
+                    <article class="card">
+                        <div class="card-image">
+                          <figure class="image is-2by1">
+                            <img src="https://picsum.photos/640/320?random=7" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p class="title is-4">Mon 7ème article cool</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                            <div class="content is-small">
+                                <time datetime="2020-10-12">12 Oct 2020</time>
+                            </div>
+                            <span class="tag">Tag(s) :</span>
+                            <a href="#">#js</a> <a href="#">#html</a> <a href="#">#css</a>
+                          </div>
+                          <div class="content is-small">
+                              <p>Un super article de : </p>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://icotar.com/avatar/thgdev.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-6"><a href="#">ThGDev</a></p>
+                              <p class="subtitle is-6">@thgdev</p>
+                            </div>
+                          </div>
+                          <button class="button" onclick="window.location.href='article.html';">
+                            <span class="icon">
+                                <i class="far fa-newspaper"></i>
+                            </span>
+                            <span>Lire →</span>
+                          </button>
+                        </div>
+                      </article>
+                </div>
+                <!-- ARTICLE #8 -->
+                <div class="column is-one-quarter">
+                    <article class="card">
+                        <div class="card-image">
+                          <figure class="image is-2by1">
+                            <img src="https://picsum.photos/640/320?random=8" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p class="title is-4">Mon 8ème article cool</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.</p>
+                            <div class="content is-small">
+                                <time datetime="2020-10-12">12 Oct 2020</time>
+                            </div>
+                            <span class="tag">Tag(s) :</span>
+                            <a href="#">#js</a> <a href="#">#html</a> <a href="#">#css</a>
+                          </div>
+                          <div class="content is-small">
+                              <p>Un super article de : </p>
+                          </div>
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img class="is-rounded" src="https://icotar.com/avatar/thgdev.svg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-6"><a href="#">ThGDev</a></p>
+                              <p class="subtitle is-6">@thgdev</p>
+                            </div>
+                          </div>
+                          <button class="button" onclick="window.location.href='article.html';">
+                            <span class="icon">
+                                <i class="far fa-newspaper"></i>
+                            </span>
+                            <span>Lire →</span>
+                          </button>
+                        </div>
+                      </article>
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>ZeBlog</strong> by <a href="#">ThGDev</a>. Des articles de qualité !
+          </p>
+        </div>
+      </footer>
+<script src="app.js"></script>
+<script src="citations.js"></script>
+<script src="modal.js"></script>
+  </body>
+</html>

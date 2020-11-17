@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZeBlog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="smoothScroll-ES5.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+      <!-- BOUTON SCROLL TO TOP -->
+    <div class="arrow-up"><a href="#top" scrollTo="top" class="scrollOnClick"><i class="fas fa-arrow-circle-up"></i></a></div>
+
+    <!-- BARRE DE MENU -->
+    <nav id="top" class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="https://via.placeholder.com/112x28?text=LOGO+ZeBlog" width="112" height="28">
+          </a>
+          
+          <!-- MENU BURGER -->
+          <a id="boutonMenu" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        
+        <!-- ELEMENTS DE MENU -->
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="index.html" class="navbar-item">Home</a>
+            <a href="about.html" class="navbar-item">A propos</a>
+          </div>
+
+        </div>
+      </nav>
+
+      <!-- CONTENU -->
+      <section class="hero is-info is-medium is-bold">
+        <div class="hero-body"></div>
+    </section>
+
+
+    <div class="container">
+        <!-- START ARTICLE FEED -->
+        <section class="articles">
+            <div class="column is-8 is-offset-2">
+                <!-- START ARTICLE -->
+                <div class="card article">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-content has-text-centered">
+                                <p class="title article-title">Mon 1er article cool</p>
+                                <div class="tags has-addons level-item">
+                                    <span class="tag is-rounded is-info">@ThgDev</span>
+                                    <span class="tag is-rounded">16 Nov 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content article-body">
+                            <p>Non arcu risus quis varius quam quisque. Dictum varius duis at consectetur lorem. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. </p>
+                            <p>Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Accumsan lacus vel facilisis volutpat. Non sodales neque sodales ut etiam.
+                                Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.</p>
+                            <h3 class="has-text-centered">Mais que vois-je, un super titre ?!</h3>
+                            <p> Et quel framework CSS ai-je utilisé pour ce site : <pre>Bulma</pre>
+                                Voluptat ut farmacium tellus in metus vulputate. Feugiat in fermentum posuere urna nec. Pharetra convallis posuere morbi leo urna molestie.
+                                Accumsan lacus vel facilisis volutpat est velit egestas. Fermentum leo vel orci porta. Faucibus interdum posuere lorem ipsum.</p>
+                        </div>
+                        <div class="tags level-item">
+                            <span class="tag">Tag(s) :</span>
+                            <span class="tag"><a href="#">#css</a></span> <span class="tag"><a href="#">#responsive</a></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- END ARTICLE -->
+              </div>
+        </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>ZeBlog</strong> by <a href="#">ThGDev</a>. Des articles de qualité !
+          </p>
+        </div>
+      </footer>
+<script src="app.js"></script>
+<script src="citations.js"></script>
+  </body>
+</html>
